@@ -1,0 +1,18 @@
+{
+  "name": "react-formatted-string",
+  "version": "1.0.0",
+  "description": "An easy and safe way to replace a string with a React component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "string",
+    "replace",
+    "component",
+    "replace"
+  ],
+  "author": "Alexander Zhelyazov <alex@zhlyzv.xyz>",
+  "license": "MIT"
+}
