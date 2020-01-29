@@ -12,7 +12,9 @@
     "string",
     "replace",
     "component",
-    "replace"
+    "replace",
+    "gatsby",
+    "gatsbyjs"
   ],
   "author": "Alexander Zhelyazov <alex@zhlyzv.xyz>",
   "license": "MIT",
