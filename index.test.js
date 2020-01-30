@@ -29,3 +29,8 @@ test('Throws an error if first argument is not a string', () => {
         formattedString({ foo: 'bar' });
     }).toThrowError();
 });
+
+test('Returns an array', () => {
+    const result = formattedString(testString, 'world!');
+    expect(() => Array.isArray(result)).toBeTruthy();
+});

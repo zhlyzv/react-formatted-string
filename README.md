@@ -1,6 +1,6 @@
 # react-formatted-string
 
-A utility for replacing a string with a React component or another string.
+A safe and easy way to do string replacement with React components.
 
 ## Installation
 
