@@ -4,7 +4,7 @@ A safe and easy way to do string replacement with React components.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/306e7831-1a83-4973-b9ec-9bd22d26f7e6/deploy-status)](https://app.netlify.com/sites/agitated-kirch-d29104/deploys)
 
-[Test coverage report](https://agitated-kirch-d29104.netlify.com/)
+[Test coverage report](https://react-formatted-string.netlify.com/)
 
 ## Installation
 
