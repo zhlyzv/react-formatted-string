@@ -1,6 +1,6 @@
-const braceRegex = new RegExp(/(\{\d\})/g);
-const getReplaceableMatches = string => string.match(braceRegex);
-const isString = string => Object.prototype.toString.call(string) === '[object String]';
+const braceRegex = new RegExp(/(\{\d\})/g)
+const getReplaceableMatches = (string) => string.match(braceRegex)
+const isString = (string) => Object.prototype.toString.call(string) === '[object String]'
 
 /**
  * Replaces placeholders in a string with either another string or a React component
@@ -13,24 +13,24 @@ const isString = string => Object.prototype.toString.call(string) === '[object S
  */
 function formattedString(string, ...args) {
     if (!string || !isString(string)) {
-        throw new TypeError('Type mismatch: provided argument is not a string.');
+        throw new TypeError('Type mismatch: provided argument is not a string.')
     }
     if (string === '' || args.length === 0) {
-        return string;
+        return string
     }
-    const replaceableMatches = getReplaceableMatches(string);
-    if (!replaceableMatches) return string;
+    const replaceableMatches = getReplaceableMatches(string)
+    if (!replaceableMatches) return string
     // Turn the string into an array and remove any empty values
-    const stringArray = string.split(braceRegex).filter(Boolean);
+    const stringArray = string.split(braceRegex).filter(Boolean)
 
-    return stringArray.map(str => {
-        const shouldBeReplaced = replaceableMatches.includes(str);
+    return stringArray.map((str) => {
+        const shouldBeReplaced = replaceableMatches.includes(str)
         if (shouldBeReplaced) {
             // Return the argument which corresponds to the matches found
-            return args[replaceableMatches.indexOf(str)];
+            return args[replaceableMatches.indexOf(str)]
         }
-        return str;
-    });
+        return str
+    })
 }
 
-module.exports = formattedString;
+module.exports = formattedString
